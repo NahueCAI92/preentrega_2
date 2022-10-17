@@ -79,23 +79,56 @@ header{
 .index {
     display: flex;
     justify-content: center;
+    transition: all 1s ease-in;
+}
+.index:hover {
+    color: var(--secondary);
+}
+.fotos {
+    display: flex;
+    flex-direction: column;
+}
 
+.portada {
+    display: flex;
+    gap: var(--text-p);
+    color: var(--secondary);
 }
 .index__nosotros {
     display: flex;
     font-size: var(--text-h);
     justify-content: center;
+    transition: all 1s ease-out;
+}
+.index__nosotros:hover {
+    color: var(--secondary);
 }
 .contacto__items {
+    padding: 8rem;
+    color: var(--primary);
     display: flex;
     flex-direction: column;
     justify-content: left;
-    font-size: medium;
+    font-size: large;
 }
-.portada {
-    display: flex;
-    gap: var(--text-p);
+.contacto__link {
     color: var(--secondary);
+    transition: all .3s ease-in-out; 
+}
+.contacto__link:hover {
+    background-color: #FFFFFF;
+    color: #FCB900;
+}
+
+.titulo {
+    background-image: url(./img/banner_contacto.jpg);
+}
+.foot {
+    padding-right: 2rem;
+    font-style: italic var(--thirty-n);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
