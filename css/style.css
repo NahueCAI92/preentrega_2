@@ -3,12 +3,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 :root{
     --primary: #FCB900;
     --secondary: #FFFFFF;
     --thirty-n: #000000;
+    --nav-pri: #3a3a3a;
 
     --text-h: 4.8em;
     --text-p: 1.2em;
@@ -36,11 +37,11 @@ ul{
 
 
 /* CLASS */
-/* 
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
-} */
+}
 .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -56,28 +57,45 @@ ul{
     flex-wrap: wrap;
     gap: 1rem;
 }
-.menu .menu__item {
+.menu__item {
     display: flex;
     align-items: center;
 }
-.menu .menu__link{
+.menu__link{
     padding: var(--text-p);
     transition: all .3s ease-in-out;
 }
-.menu .menu__link:hover{
+.menu__link:hover{
     background-color: #FFFFFF;
     color: #FCB900;
 }
-.navbar .navbar__link:hover {
+.navbar__link:hover {
     background-color: #FFFFFF;
 }
 
-.fotos {
-    max-width: 600px;
+.titulos {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.escudos {
+    max-width: 600px;
+}
+.fondo__negro {
+    background-color: var(--nav-pri);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-self: flex-end;
+    transition: all 3s ease-in-out;
+}
+.fondo__negro:hover {
+    background-color: #000000;
+    color: #FCB900;
+}
+
+
+
 
 /* FOOTER */
 
@@ -85,6 +103,7 @@ ul{
     padding-right: 2rem;
     font-style: italic var(--thirty-n);
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
 }
