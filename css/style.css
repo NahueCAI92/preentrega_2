@@ -30,30 +30,31 @@ a{
     text-decoration: none;
     color: var(--secondary);
 }
-img {
-    max-width: 1200px;
-}
+
 
 ul{
     list-style-type: none;
 }
+
+header{
+    padding: 12px 36px;
+    background-color: #3A3A3A;
+}
+
+/* CLASS */
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-header{
-    padding: 12px 40px;
-    background-color: #3A3A3A;
-}
 .navbar {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.navbar .navbar__link{
+.navbar .navbar__link {
     display: block;
     max-width: 480px; 
     transition: all .3s ease-in-out;   
@@ -64,10 +65,13 @@ header{
     flex-wrap: wrap;
     gap: 1rem;
 }
+.menu .menu__item {
+    display: flex;
+    align-items: center;
+}
 .menu .menu__link{
     padding: var(--text-p);
     transition: all .3s ease-in-out;
-
 }
 .menu .menu__link:hover{
     background-color: #FFFFFF;
@@ -76,14 +80,7 @@ header{
 .navbar .navbar__link:hover {
     background-color: #FFFFFF;
 }
-.index {
-    display: flex;
-    justify-content: center;
-    transition: all 1s ease-in;
-}
-.index:hover {
-    color: var(--secondary);
-}
+
 .fotos {
     max-width: 600px;
     display: flex;
@@ -91,17 +88,7 @@ header{
     justify-content: end;
 }
 
-.portada {
-    display: flex;
-    flex-direction: column;
-    gap: var(--text-p);
-    color: var(--secondary);
-}
-.portada__item {
-    display: inline-block;
-    flex-wrap: wrap;
-    color:#000000;
-}
+/* FOOTER */
 
 .foot {
     padding-right: 2rem;
@@ -110,21 +97,3 @@ header{
     justify-content: flex-end;
     align-items: flex-end;
 }
-
-
-
-
-
-
-@media screen and (max-width: 975px) {
-.navbar {
-    flex-direction: column;
-    align-items: center;
-}
-.navbar .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-}
-
