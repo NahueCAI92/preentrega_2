@@ -49,8 +49,8 @@ ul{
 }
 .navbar .navbar__link {
     display: block;
-    max-width: 480px; 
-    transition: all .3s ease-in-out;   
+    max-width: 500px; 
+    transition: all .3s ease-in;   
 }
 .navbar .menu {
     display: flex;
@@ -70,7 +70,7 @@ ul{
     color: #FCB900;
 }
 .navbar__link:hover {
-    background-color: #FFFFFF;
+    background-color: #000000;
 }
 
 .titulos {
@@ -80,6 +80,10 @@ ul{
 }
 .escudos {
     max-width: 600px;
+}
+.escudos__noticias {
+    max-width: 100rem;
+    max-height: 25rem;  
 }
 .fondo__negro {
     background-color: var(--nav-pri);
@@ -91,11 +95,14 @@ ul{
 }
 .fondo__negro:hover {
     background-color: #000000;
-    color: #FCB900;
 }
-
-
-
+.margen {
+    padding: 0.5rem;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+}
 
 /* FOOTER */
 
