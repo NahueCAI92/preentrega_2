@@ -82,7 +82,7 @@ ul{
     max-width: 600px;
 }
 .escudos__noticias {
-    max-width: 1200px;
+    max-width: 600px;
     max-height: 250px;  
 }
 .fondo__negro {
@@ -102,6 +102,28 @@ ul{
 .centro {
     display: flex;
     justify-content: center;
+}
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  input,
+textarea {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+button{
+    margin-left: .5em;
 }
 
 
