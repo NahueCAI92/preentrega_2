@@ -51,6 +51,7 @@ ul{
     display: block;
     max-width: 500px; 
     transition: all .3s ease-in;   
+    border-radius: 12px;
 }
 .navbar .menu {
     display: flex;
@@ -62,8 +63,9 @@ ul{
     align-items: center;
 }
 .menu__link{
-    padding: var(--text-p);
-    transition: all .3s ease-in-out;
+    padding: 0.5rem 2rem ;
+    transition: all .3s ease-in;
+    border-radius: 5px;
 }
 .menu__link:hover{
     background-color: #FFFFFF;
@@ -72,6 +74,12 @@ ul{
 .navbar__link:hover {
     background-color: #000000;
 }
+.active {
+    color:#FCB900;
+}
+
+
+/* body */
 
 .titulos {
     display: flex;
@@ -80,18 +88,26 @@ ul{
 }
 .escudos {
     max-width: 600px;
+    min-width: 600px;
+    max-height: 400px;
+    min-height: 400px;
 }
 .escudos__noticias {
     max-width: 600px;
     max-height: 250px;  
 }
-.fondo__negro {
+.escudos__equipos {
+    max-width: 400px;
+    max-height: 400px; 
+}
+.fondo__negro{
+    max-width: auto;
     background-color: var(--nav-pri);
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: space-evenly;
     align-self: flex-end;
-    transition: all 3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .fondo__negro:hover {
     background-color: #000000;
@@ -103,6 +119,18 @@ ul{
     display: flex;
     justify-content: center;
 }
+.body__link {
+        color: #000000;
+        padding: 0.5rem 2rem ;
+        transition: all .3s ease-in;
+        border-radius: 5px;
+    }
+.body__link:hover{
+    background-color: #FFFFFF;
+    color: #FCB900;
+}   
+
+
 form {
     /* Centrar el formulario en la página */
     margin: 0 auto;
@@ -130,10 +158,10 @@ button{
 /* FOOTER */
 
 .foot {
-    padding-right: 2rem;
-    font-style: italic var(--thirty-n);
+    padding: 2.5rem 1.5rem;
+    font-style: italic #3a3a3a;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
 }
