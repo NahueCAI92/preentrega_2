@@ -49,7 +49,7 @@ ul{
     flex-wrap: wrap;
 }
 .navbar .navbar__link {
-    display: block;
+    display: flex;
     max-width: 600px; 
     transition: all .3s ease-in;   
     border-radius: 2.5rem;
@@ -89,6 +89,7 @@ ul{
 }
 
 .escudos {
+    display: flex;
     max-width: 600px;
     min-width: 600px;
     max-height: 400px;
@@ -114,9 +115,7 @@ ul{
 .fondo__negro:hover {
     background-color: #000000;
 }
-.margen {
-    padding: 0.5rem;
-}
+
 .centro {
     display: flex;
     justify-content: center;
